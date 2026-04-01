@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Urban Traffic Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">🚦 TrafficAI</div>
+    <div class="nav-right">
+      <span class="status">
+        ● <span id="liveStatus">LIVE</span>
+      </span>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Smart Urban Traffic Dashboard</h1>
+    <p>Real-time monitoring of city traffic conditions, incidents, and congestion levels.</p>
+    <button class="cta">View Incident Map</button>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard">
+    <div class="card">
+      <h3>Average Traffic Speed</h3>
+      <p class="metric">45 km/h</p>
+    </div>
+
+    <div class="card">
+      <h3>Active Incidents</h3>
+      <p class="metric">3 incidents</p>
+    </div>
+
+    <div class="card">
+      <h3>Congestion Level</h3>
+      <p class="metric congestion moderate">Moderate</p>
+    </div>
+  </section>
+
+  <!-- MAP + ALERTS -->
+  <section class="map-alerts">
+    <div class="map">
+      <h3>City Traffic Map</h3>
+      <div class="map-placeholder">[ Map Placeholder ]</div>
+    </div>
+
+    <div class="alerts">
+      <h3>Live Alerts</h3>
+      <ul id="alertsList"></ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 TrafficAI | Contact: support@trafficai.com</p>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
